@@ -8,6 +8,7 @@ namespace MyRealmSample
     {
         public App()
         {
+
             InitializeComponent();
 
             MainPage = new MainPage();
