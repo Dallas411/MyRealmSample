@@ -15,7 +15,7 @@ namespace MyRealmSample
         Realm realmDB;
         public MainPage()
         {
-
+            ///banchdiprova
             InitializeComponent();
             realmDB = Realm.GetInstance();
             List<Student> students = realmDB.All<Student>().ToList();
