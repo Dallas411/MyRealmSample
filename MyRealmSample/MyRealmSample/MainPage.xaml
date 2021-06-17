@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyRealmSample.MainPage">
+
+    <StackLayout>
+        <ContentView>
+            <ListView x:Name="studentList">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding FullName}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ContentView>
+        <ContentView IsVisible="false" x:Name="addContentView">
+            <StackLayout>
+                <Entry Margin="20,10,0,0" x:Name="studentName" Placeholder="Nome"/>
+                <Entry Margin="20,10,0,0" x:Name="studentSurname" Placeholder="Cognome"/>
+                <Button Text="Aggiungi" Clicked="Button_Clicked"/>
+            </StackLayout>
+        </ContentView>
+    </StackLayout>
+
+</ContentPage>
