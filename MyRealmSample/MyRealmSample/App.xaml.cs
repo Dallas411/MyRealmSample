@@ -8,7 +8,7 @@ namespace MyRealmSample
     {
         public App()
         {
-
+            //Commento file app
             InitializeComponent();
 
             MainPage = new MainPage();
