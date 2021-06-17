@@ -9,6 +9,7 @@ namespace MyRealmSample
         public App()
         {
             //Commento file app
+            //altra modifica master
             InitializeComponent();
 
             MainPage = new MainPage();
